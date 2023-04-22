@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "970367327690",
+    "project_id": "nationalpark-98705",
+    "storage_bucket": "nationalpark-98705.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970367327690:android:3f09542ea3251899360333",
+        "android_client_info": {
+          "package_name": "com.example.advancedandroidproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "970367327690-mrrqoqo02gh7ud1nreebj439ct2mv329.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgymWHgnUZbSYHxNOxJ457Y120BStd0UU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "970367327690-mrrqoqo02gh7ud1nreebj439ct2mv329.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <EditText
+        android:id="@+id/etemail2"
+        android:layout_width="282dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etconfirmpass" />
+
+    <EditText
+        android:id="@+id/etpass2"
+        android:layout_width="278dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etconfirmpass"
+        android:layout_width="278dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etpass2" />
+
+    <Button
+        android:id="@+id/buttsignup2"
+        android:layout_width="236dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="36dp"
+        android:text="SIGN  UP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etemail2" />
+
+    <Button
+        android:id="@+id/buttsignin2"
+        android:layout_width="233dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="20dp"
+        android:text="Already registered? SIGN IN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttsignup2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

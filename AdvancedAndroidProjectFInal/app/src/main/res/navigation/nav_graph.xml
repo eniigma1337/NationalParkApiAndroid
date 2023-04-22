@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signIn">
+
+    <fragment
+        android:id="@+id/parkDetailsFragment"
+        android:name="com.example.advancedandroidproject.ParkDetailsFragment"
+        android:label="Park Details"
+        tools:layout="@layout/fragment_park_details" >
+        <action
+            android:id="@+id/action_parkDetailsFragment_to_itineraryFragment"
+            app:destination="@id/itineraryFragment" />
+        <argument
+            android:name="selectedPark"
+            app:argType="com.example.advancedandroidproject.models.ParkAsArg" />
+    </fragment>
+    <fragment
+        android:id="@+id/itineraryFragment"
+        android:name="com.example.advancedandroidproject.ItineraryFragment"
+        android:label="My Itinerary"
+        tools:layout="@layout/fragment_itinerary" >
+        <action
+            android:id="@+id/action_itineraryFragment_to_editItineraryFragment"
+            app:destination="@id/editItineraryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editItineraryFragment"
+        android:name="com.example.advancedandroidproject.EditItineraryFragment"
+        android:label="Edit Itinerary"
+        tools:layout="@layout/fragment_edit_itinerary" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_editItineraryFragment_to_itineraryFragment"
+            app:destination="@id/itineraryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/findParkFragment"
+        android:name="com.example.advancedandroidproject.FindParkFragment"
+        android:label="fragment_find_park"
+        tools:layout="@layout/fragment_find_park" >
+        <action
+            android:id="@+id/action_findParkFragment_to_parkDetailsFragment"
+            app:destination="@id/parkDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signIn"
+        android:name="com.example.advancedandroidproject.SignIn"
+        android:label="SignIn" >
+        <action
+            android:id="@+id/action_signIn_to_signUp"
+            app:destination="@id/signUp" />
+        <action
+            android:id="@+id/action_signIn_to_findParkFragment"
+            app:destination="@id/findParkFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.example.advancedandroidproject.SignUp"
+        android:label="SignUp" >
+        <action
+            android:id="@+id/action_signUp_to_signIn"
+            app:destination="@id/signIn" />
+    </fragment>
+</navigation>
